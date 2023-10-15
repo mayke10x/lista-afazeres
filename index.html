@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Afazeres</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <div class="author">
+        <img src="/imagens/perfil.jpeg" alt="Imagem de perfil de um rapaz de cor parda, cabelos pretos e curto, com uma blusa de cor verde e com o fundo da imagem de cor branca.">
+
+        <div>
+            <h2>Maycon Douglas</h2>
+            <h4 class="author_job">Desenvolvedor de Software</h4>
+        </div>
+    </div>
+
+    <div class="about_app">
+        <h1>Minha Lista De Afazeres</h1>
+        <h3 class="describe_app">Aqui armazeno as tarefas que tenho que realizar</h3>
+    </div>
+
+    
+    <form id="form_task">
+        <h4>Adicionar Novas Tarefas</h4>
+
+        <div class="group_input_task">
+            <label for="describe_task">Descreva a tarefa:</label>
+            <input type="text" name="describe_task" id="describe_task" placeholder="Descreva sua tarefa aqui..." required>
+        </div>
+
+        <button type="submit" class="btn bg_success" id="btn_add" title="Confirmar adição">Adicionar</button>
+    </form>
+
+    <table class="to_do_list">
+        <thead>
+            <tr>
+                <th>Feito ?</th>
+                <th>Descrição</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    Nenhuma tarefa encontrada, adicione uma nova tarefa para aparecer aqui
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
